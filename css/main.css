@@ -92,14 +92,44 @@ textarea {
   border: 1px black solid;
 }
 
-figure{
+figure {
   border: 1px gray solid;
 }
 /* TEST STYLES, FOR DEVELOPMENT ONLY */
 
+/********** global styles  **********/
 
+.content-wrapper {
+  display: flex;
+}
 
-   
+/********** text styles  **********/
+
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+p {
+}
+a {
+}
+
+/********** mobile styles  **********/
+/***** header styles *****/
+/***** hero styles  *****/
+/***** services styles  *****/
+/***** portfolio styles  *****/
+/***** about styles *****/
+/***** contact styles *****/
+/***** footer styles  *****/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -188,6 +218,15 @@ figure{
    Modify as content requires.
    ========================================================================== */
 
+/* header styles */
+/* hero styles  */
+/* services styles  */
+/* portfolio styles  */
+/* about styles */
+/* contact styles */
+/* footer styles  */
+
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
@@ -273,4 +312,3 @@ figure{
     page-break-after: avoid;
   }
 }
-
