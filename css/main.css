@@ -91,6 +91,10 @@ textarea {
 .content-wrapper {
   border: 1px black solid;
 }
+
+figure{
+  border: 1px gray solid;
+}
 /* TEST STYLES, FOR DEVELOPMENT ONLY */
 
 
