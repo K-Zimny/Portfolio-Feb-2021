@@ -95,12 +95,33 @@ textarea {
 figure {
   border: 1px gray solid;
 }
+
+.icon {
+  border: 1px gray solid;
+}
+
 /* TEST STYLES, FOR DEVELOPMENT ONLY */
 
 /********** global styles  **********/
 
 .content-wrapper {
   display: flex;
+  flex-flow: column;
+  padding: 0 5%;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /********** text styles  **********/
@@ -123,13 +144,85 @@ a {
 }
 
 /********** mobile styles  **********/
+
 /***** header styles *****/
+
+/* logo styles  */
+
+/* nav styles  */
+
 /***** hero styles  *****/
+
+/* content styles  */
+
+.hero .content-wrapper {
+  align-items: center;
+}
+.hero .content {
+  width: 60%;
+}
+
+.hero .content h1 {
+  text-align: center;
+}
+/* image styles  */
+.hero-image {
+  display: none;
+}
 /***** services styles  *****/
+
+.services .content-wrapper {
+  align-items: center;
+}
+
+.block-1,
+.block-2,
+.block-3,
+.block-4 {
+width:60%;
+}
+
+.services .title h2,
+.services .content h2,
+.services .content h4,
+.services .content p{
+  text-align: center;
+}
+
+
 /***** portfolio styles  *****/
+
+.portfolio .content-wrapper {
+  align-items: center;
+}
 /***** about styles *****/
+
+.about .content-wrapper {
+}
 /***** contact styles *****/
+
+.contact ul{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 /***** footer styles  *****/
+
+/* footer nav styles */
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* copyright/photo attribution styles */
+
+footer .copyright {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -225,7 +318,6 @@ a {
 /* about styles */
 /* contact styles */
 /* footer styles  */
-
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
