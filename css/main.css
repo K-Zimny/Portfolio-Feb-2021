@@ -151,6 +151,46 @@ a {
 
 /* nav styles  */
 
+.topnav {
+  overflow: hidden;
+  /* background-color: #333; */
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  /* background: black; */
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+}
+
 /***** hero styles  *****/
 
 /* content styles  */
@@ -214,6 +254,11 @@ a {
 /***** footer styles  *****/
 
 /* footer nav styles */
+
+footer nav {
+  width: 100%;
+  margin: auto;
+}
 
 footer ul {
   display: flex;
@@ -336,7 +381,45 @@ footer .copyright {
 
   /***** header styles *****/
   /***** hero styles  *****/
+
+  .hero .content-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .hero .content {
+    width: 45%;
+  }
+
+  .hero-image {
+    display: contents;
+    width: 45%;
+  }
+  
   /***** services styles  *****/
+
+.services .content-wrapper {
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.services .block {
+  height: 200px;
+}
+.services .title {
+  width: 100%;
+}
+
+.services .develop{
+  width: 45%;
+}
+
+.services .design{  
+  width: 45%;
+}
+
+
   /***** portfolio styles  *****/
 
   .portfolio .work {
@@ -402,6 +485,28 @@ footer .copyright {
     width: 45%;
   }
 
+  /***** footer styles  *****/
+
+  /* footer nav styles  */
+  footer nav {
+    width: 50%;
+  }
+}
+
+/********** tablet styles  **********/
+@media only screen and (min-width: 768px) {
+  /********** global styles  **********/
+  /********** text styles  **********/
+
+  /***** header styles *****/
+  /***** hero styles  *****/
+
+
+
+  /***** services styles  *****/
+  /***** portfolio styles  *****/
+  /***** about styles *****/
+  /***** contact styles *****/
   /***** footer styles  *****/
 }
 
