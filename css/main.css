@@ -144,6 +144,7 @@ h3 {
 }
 h4 {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 h5 {
 }
@@ -296,7 +297,7 @@ header nav {
 }
 
 .portfolio .work {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 /***** about styles *****/
@@ -320,7 +321,8 @@ header nav {
 }
 
 .icon img {
-  padding: 5px;
+  width: 80%;
+  padding: 10px 0;
 }
 
 /***** footer styles  *****/
@@ -559,16 +561,36 @@ footer .copyright {
     flex-flow: row wrap;
     justify-content: space-between;
   }
-
+  
   .contact .title {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-
+  
   .contact .text,
   .contact .info {
     width: 45%;
+  }
+
+  .contact .info {
+    display: felx;
+    flex-flow: row wrap;
+  }
+
+  .info .text {
+    width: 100%;
+  }
+
+  .info p {
+    text-align: right;
+  }
+  
+  .contact ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   /***** footer styles  *****/
