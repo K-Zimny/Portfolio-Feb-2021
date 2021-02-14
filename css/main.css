@@ -151,6 +151,10 @@ a {
 
 /* nav styles  */
 
+header nav {
+  display: none;
+}
+
 .topnav {
   overflow: hidden;
   /* background-color: #333; */
@@ -167,7 +171,7 @@ a {
   color: black;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  /* font-size: 17px; */
   display: block;
 }
 
@@ -182,14 +186,15 @@ a {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  /* background-color: #ddd; */
+  /* color: black; */
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  color: white;
+  /* color: white; */
 }
+
 
 /***** hero styles  *****/
 
@@ -380,7 +385,8 @@ footer .copyright {
   /********** text styles  **********/
 
   /***** header styles *****/
-  /***** hero styles  *****/
+
+   /***** hero styles  *****/
 
   .hero .content-wrapper {
     flex-flow: row wrap;
@@ -494,11 +500,21 @@ footer .copyright {
 }
 
 /********** tablet styles  **********/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   /********** global styles  **********/
   /********** text styles  **********/
 
   /***** header styles *****/
+
+   /* nav styles  */
+
+  header nav {
+    display: contents;
+  }
+  
+  .topnav {
+    display: none;
+  }
   /***** hero styles  *****/
 
 
