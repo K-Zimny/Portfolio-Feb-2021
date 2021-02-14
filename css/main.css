@@ -327,6 +327,10 @@ header nav {
 
 /* footer nav styles */
 
+footer {
+  width: 100%;
+}
+
 footer .content-wrapper{
   background: #095156;
   color: white;
