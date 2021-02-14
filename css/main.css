@@ -104,6 +104,10 @@ figure {
 
 /********** global styles  **********/
 
+body {
+  color: #29525E;
+}
+
 .content-wrapper {
   display: flex;
   flex-flow: column;
@@ -146,6 +150,10 @@ a {
 /********** mobile styles  **********/
 
 /***** header styles *****/
+
+header .content-wrapper{
+  background: #F8F6F4;
+}
 
 /* logo styles  */
 
@@ -202,6 +210,7 @@ header nav {
 
 .hero .content-wrapper {
   align-items: center;
+  background: #F8F6F4;
 }
 .hero .content {
   width: 60%;
@@ -218,6 +227,7 @@ header nav {
 
 .services .content-wrapper {
   align-items: center;
+  background: white;
 }
 
 .services .develop,
@@ -243,12 +253,21 @@ header nav {
 
 .portfolio .content-wrapper {
   align-items: center;
+  background: #F8F6F4;
 }
 /***** about styles *****/
 
-.about .content-wrapper {
+.about .content-wrapper{
+  background: #087e8b;
+  color: white;
 }
+
 /***** contact styles *****/
+
+.contact .content-wrapper{
+  background: #095156;
+  color: white;
+}
 
 .contact ul {
   display: flex;
@@ -259,6 +278,11 @@ header nav {
 /***** footer styles  *****/
 
 /* footer nav styles */
+
+footer .content-wrapper{
+  background: #095156;
+  color: white;
+}
 
 footer nav {
   width: 100%;
