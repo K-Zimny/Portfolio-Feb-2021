@@ -109,6 +109,7 @@ html {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   color: #29525E;
 }
 
@@ -151,41 +152,66 @@ hr {
 
 h1 {
   font-size: 2em;
-  font-weight: lighter;
+  font-weight: normal;
   margin-top: 10px;
   line-height: 55px;
+  font-family: 'Raleway', sans-serif;
 }
 
 h2 {
   font-size: 1.75em;
   margin-top: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+
 }
 
 h3 {  
   font-size: 1.6em;
   margin-top: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+
 }
 
 h4 {
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+
 }
 
 h5 {
   font-size: 1.4em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+
 }
 
 h6 {
   font-size: 1.3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+
 }
 
 p {
   font-size: 1.25em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-weight: normal;
+
 }
 
 a {
   font-size: 1.25em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  color: #29525E;
+  text-decoration: none;
+
 }
 
 /********** mobile styles  **********/
@@ -194,7 +220,7 @@ a {
 
 header .content-wrapper{
   background: #F8F6F4;
-  padding: 1% 5%;
+  padding: 2% 5% 2% 5%;
 }
 
 /* logo styles  */
@@ -530,7 +556,6 @@ footer .copyright {
 
   h1 {
     font-size: 2em;
-    font-weight: lighter;
     margin-top: 10px;
     line-height: 55px;
   }
@@ -716,7 +741,6 @@ footer .copyright {
 
   h1 {
     font-size: 2.5em;
-    font-weight: lighter;
     margin-top: 10px;
     line-height: 55px;
   }
@@ -755,7 +779,29 @@ footer .copyright {
 
   /***** header styles *****/
 
+  header .content-wrapper {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
   
+  header h3 {
+    margin-right: 15%;
+  }
+  header ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+
+  header figure {
+    width: 10%;
+  }
+
+  header img {
+    width: 100%;
+  }
+
   /* nav styles  */
   
   header nav {
