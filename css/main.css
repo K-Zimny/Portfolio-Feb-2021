@@ -146,42 +146,46 @@ hr {
   text-align: center;
 }
 
+
 /********** text styles  **********/
 
 h1 {
   font-size: 2em;
+  font-weight: lighter;
+  margin-top: 10px;
+  line-height: 55px;
 }
+
 h2 {
   font-size: 1.75em;
-
   margin-top: 0;
 }
+
 h3 {  
   font-size: 1.6em;
-
   margin-top: 0;
 }
+
 h4 {
   font-size: 1.5em;
-
   margin-top: 0;
   margin-bottom: 10px;
 }
+
 h5 {
   font-size: 1.4em;
-
 }
+
 h6 {
   font-size: 1.3em;
-
 }
+
 p {
   font-size: 1.25em;
-
 }
+
 a {
   font-size: 1.25em;
-
 }
 
 /********** mobile styles  **********/
@@ -222,6 +226,7 @@ header nav {
 /* Style navigation menu links */
 .topnav a {
   display: flex;
+  align-items: center;
   color: black;
   padding: 14px 16px;
   text-decoration: none;
@@ -267,7 +272,7 @@ header nav {
   width: 60%;
 }
 
-.hero .content h1 {
+.hero .content {
   text-align: center;
   background: #F8F6F4;
   opacity: 90%;
@@ -513,7 +518,54 @@ footer .copyright {
 
   /********** global styles  **********/
 
+ .topnav a {
+   font-size: 1.50em;
+ }
+ 
+ .topnav a.icon {
+   top: 4px;
+ }
+
   /********** text styles  **********/
+
+  h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    margin-top: 10px;
+    line-height: 55px;
+  }
+  
+  h2 {
+    font-size: 1.75em;
+    margin-top: 0;
+  }
+  
+  h3 {  
+    font-size: 1.6em;
+    margin-top: 0;
+  }
+  
+  h4 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    font-size: 1.4em;
+  }
+  
+  h6 {
+    font-size: 1.3em;
+  }
+  
+  p {
+    font-size: 1.25em;
+  }
+  
+  a {
+    font-size: 1.25em;
+  }
 
   /***** header styles *****/
 
@@ -545,7 +597,7 @@ footer .copyright {
 }
 
 .services .block {
-  height: 275px;
+  height: 310px;
 }
 .services .title {
   width: 100%;
@@ -662,18 +714,50 @@ footer .copyright {
   /********** global styles  **********/
   /********** text styles  **********/
 
-  /***** header styles *****/
-
-  .hero .content {
-    width: 35%;
+  h1 {
+    font-size: 2.5em;
+    font-weight: lighter;
+    margin-top: 10px;
+    line-height: 55px;
   }
   
-  .hero-image figure {
-    width: 60%;
+  h2 {
+    font-size: 2.25em;
+    margin-top: 0;
+  }
+  
+  h3 {  
+    font-size: 2.1em;
+    margin-top: 0;
+  }
+  
+  h4 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    font-size: 1.9em;
+  }
+  
+  h6 {
+    font-size: 1.8em;
+  }
+  
+  p {
+    font-size: 1.6em;
+  }
+  
+  a {
+    font-size: 1.5em;
   }
 
-   /* nav styles  */
+  /***** header styles *****/
 
+  
+  /* nav styles  */
+  
   header nav {
     display: contents;
   }
@@ -682,10 +766,26 @@ footer .copyright {
     display: none;
   }
   /***** hero styles  *****/
+  
+  
+  .hero .content {
+    width: 20%;
+    margin: auto;
+   }
 
-
+   .hero .content h1{
+     line-height: 60px;
+   }
+  
+  .hero-image figure {
+    width: 50%;
+  }
 
   /***** services styles  *****/
+
+  .services .block {
+    height: 395px;;
+  }
   /***** portfolio styles  *****/
   /***** about styles *****/
   /***** contact styles *****/
