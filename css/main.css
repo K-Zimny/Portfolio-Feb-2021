@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 
 /* TEST STYLES, FOR DEVELOPMENT ONLY */
-.content-wrapper {
+/* .content-wrapper {
   border: 1px black solid;
 }
 
@@ -98,11 +98,17 @@ figure {
 
 .icon {
   border: 1px gray solid;
-}
+} */
 
 /* TEST STYLES, FOR DEVELOPMENT ONLY */
 
 /********** global styles  **********/
+
+html {
+  font-size: 16px;
+  
+}
+
 
 body {
   color: #29525E;
@@ -135,24 +141,39 @@ img {
 /********** text styles  **********/
 
 h1 {
+  font-size: 2em;
 }
 h2 {
+  font-size: 1.75em;
+
   margin-top: 0;
 }
-h3 {
+h3 {  
+  font-size: 1.6em;
+
   margin-top: 0;
 }
 h4 {
+  font-size: 1.5em;
+
   margin-top: 0;
   margin-bottom: 10px;
 }
 h5 {
+  font-size: 1.4em;
+
 }
 h6 {
+  font-size: 1.3em;
+
 }
 p {
+  font-size: 1.25em;
+
 }
 a {
+  font-size: 1.25em;
+
 }
 
 /********** mobile styles  **********/
@@ -185,15 +206,17 @@ header nav {
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+  flex-flow: column;
+  align-items: center;
 }
 
 /* Style navigation menu links */
 .topnav a {
+  display: flex;
   color: black;
   padding: 14px 16px;
   text-decoration: none;
   /* font-size: 17px; */
-  display: block;
 }
 
 /* Style the hamburger menu */
@@ -306,6 +329,7 @@ header nav {
 /***** about styles *****/
 
 .about .content-wrapper{
+  align-items: center;
   background: #087e8b;
   color: white;
 }
@@ -313,6 +337,7 @@ header nav {
 /***** contact styles *****/
 
 .contact .content-wrapper{
+  align-items: center;
   background: #095156;
   color: white;
 }
