@@ -207,7 +207,7 @@ header nav {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  /* background-color: #ddd; */
+  background-color: #ddd;
   /* color: black; */
 }
 
@@ -216,6 +216,9 @@ header nav {
   /* color: white; */
 }
 
+#myLinks a {
+  text-align: center;
+}
 
 /***** hero styles  *****/
 
