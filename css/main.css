@@ -106,9 +106,7 @@ figure {
 
 html {
   font-size: 16px;
-  
 }
-
 
 body {
   color: #29525E;
@@ -136,6 +134,16 @@ li {
 
 img {
   width: 100%;
+}
+
+hr {
+  height: 1px;
+  border-top: 2px solid #3F7F93;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
 }
 
 /********** text styles  **********/
@@ -182,6 +190,7 @@ a {
 
 header .content-wrapper{
   background: #F8F6F4;
+  padding: 1% 5%;
 }
 
 /* logo styles  */
@@ -251,6 +260,7 @@ header nav {
   align-items: center;
   background: #F8F6F4 url(../img/hero-img.png) no-repeat center ;
   background-size: cover;
+  padding: 1% 5%;
 }
 
 .hero .content {
@@ -344,8 +354,14 @@ header nav {
 
 .contact ul {
   display: flex;
-  flex-flow: column;
-  align-items: center;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.contact a {
+  color: white;
+  /* text-decoration: none; */
+  /* font-weight: normal; */
 }
 
 .icon img {
@@ -375,6 +391,14 @@ footer ul {
   display: flex;
   justify-content: space-evenly;
 }
+
+footer a {
+  color: white;
+  text-decoration: none;
+  /* font-weight: normal; */
+}
+
+
 
 
 /* copyright/photo attribution styles */
@@ -618,7 +642,11 @@ footer .copyright {
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+  }
+
+  .contact li {
+    padding-left: 40px;
   }
 
   /***** footer styles  *****/
