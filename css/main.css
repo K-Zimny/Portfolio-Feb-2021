@@ -207,7 +207,6 @@ p {
 
 a {
   font-size: 1.25em;
-  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   color: #29525E;
   text-decoration: none;
@@ -220,7 +219,7 @@ a {
 
 header .content-wrapper{
   background: #F8F6F4;
-  padding: 2% 5% 2% 5%;
+  padding: 2% 5% 0% 5%;
 }
 
 /* logo styles  */
@@ -289,19 +288,17 @@ header nav {
 
 .hero .content-wrapper {
   align-items: center;
-  background: #F8F6F4 url(../img/hero-img.png) no-repeat center ;
+  background: #F8F6F4 url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80) no-repeat center ;
   background-size: cover;
   padding: 1% 5%;
-}
-
-.hero .content {
-  width: 60%;
 }
 
 .hero .content {
   text-align: center;
   background: #F8F6F4;
   opacity: 90%;
+  width: 60%;
+  border: 2px solid #29525E;
 }
 /* image styles  */
 .hero-image {
@@ -594,12 +591,16 @@ footer .copyright {
 
   /***** header styles *****/
 
-   /***** hero styles  *****/
+  /***** hero styles  *****/
 
   .hero .content-wrapper {
     flex-flow: row wrap;
     justify-content: space-between;
-    background: #F8F6F4;
+    /* background: #F8F6F4; */
+    /* background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
   }
 
   .hero .content {
@@ -615,26 +616,26 @@ footer .copyright {
   }
   /***** services styles  *****/
 
-.services .content-wrapper {
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
+    .services .content-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
 
-.services .block {
-  height: 310px;
-}
-.services .title {
-  width: 100%;
-}
+  .services .block {
+    height: 310px;
+  }
+  .services .title {
+    width: 100%;
+  }
 
-.services .develop{
-  width: 45%;
-}
+  .services .develop{
+    width: 45%;
+  }
 
-.services .design{  
-  width: 45%;
-}
+  .services .design{  
+    width: 45%;
+  }
 
 
   /***** portfolio styles  *****/
@@ -782,6 +783,7 @@ footer .copyright {
   header .content-wrapper {
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: baseline;
   }
   
   header h3 {
@@ -813,10 +815,9 @@ footer .copyright {
   }
   /***** hero styles  *****/
   
-  
+ 
   .hero .content {
     width: 20%;
-    margin: auto;
    }
 
    .hero .content h1{
