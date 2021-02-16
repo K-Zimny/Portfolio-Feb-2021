@@ -116,7 +116,10 @@ body {
 .content-wrapper {
   display: flex;
   flex-flow: column;
-  padding: 5% 5%;
+  padding: 2% 5%;
+  max-width: 1366px;
+  margin: auto;
+}
 }
 
 figure {
@@ -160,7 +163,7 @@ h1 {
 
 h2 {
   font-size: 1.75em;
-  margin-top: 0;
+  margin-top: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
 
@@ -187,13 +190,15 @@ h5 {
   font-size: 1.4em;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
-
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h6 {
   font-size: 1.3em;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
+
 
 }
 
@@ -216,6 +221,10 @@ a {
 /********** mobile styles  **********/
 
 /***** header styles *****/
+
+header {
+  background: #F8F6F4;
+}
 
 header .content-wrapper{
   background: #F8F6F4;
@@ -286,9 +295,14 @@ header nav {
 
 /* content styles  */
 
+.hero {
+  background: #F8F6F4;
+  padding-bottom: 10px;
+}
+
 .hero .content-wrapper {
   align-items: center;
-  background: #F8F6F4 url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80) no-repeat center ;
+  background: #F8F6F4 url(../img/christopher-gower-m_HRfLhgABo-unsplash\ \(1\).jpg) no-repeat center ;
   background-size: cover;
   padding: 1% 5%;
 }
@@ -307,9 +321,14 @@ header nav {
 
 /***** services styles  *****/
 
+.services {
+  /* background: #F8F6F4; */
+    background: white;
+
+}
 .services .content-wrapper {
   align-items: center;
-  background: white;
+  /* background: white; */
 }
 
 .services .develop,
@@ -323,12 +342,13 @@ header nav {
 .services .develop {
   background-image: url(../img/develop-background-full.png);
   margin-bottom: 10px;
+  background-repeat: round;
 }
 
 .services .design {
   background-image: url(../img/design-background-full.png);
   margin-bottom: 10px;
-
+  background-repeat: round;
 }
 
 .block {
@@ -345,7 +365,7 @@ header nav {
 .services .icon {
   display: flex;
   justify-content: center;
-  width: 40%;
+  width: 35%;
   margin: auto;
 }
 
@@ -353,33 +373,80 @@ header nav {
   width: 100%;
 }
 
+#design-pencil-ruler {
+  margin-bottom: 12px;
+}
+
+/* consult styles */
+
+.consult {
+  width: 100%;
+}
+#consult-button{
+  color: #ffffff;
+  background-color: #6B9438;
+  border-radius: 5px;
+  /* padding: 10px 0px; */
+  transition-duration: 0.4s;
+  width: 80%;
+}
+
+#consult-button:hover{
+  background-color: #5d8b29fd;
+  /* padding: 16px 160px; */
+}
+
+#consult-button a{
+  color: #ffffff;
+  text-decoration:none;
+}
+
+
 /***** portfolio styles  *****/
+
+.portfolio {
+  background: #F8F6F4;
+}
 
 .portfolio .content-wrapper {
   align-items: center;
-  background: #F8F6F4;
 }
 
 .portfolio .work {
   margin-bottom: 40px;
 }
 
+.portfolio h4 {
+  font-style: italic;
+}
+
 /***** about styles *****/
+
+.about {
+  background: #087e8b;
+}
 
 .about .content-wrapper{
   align-items: center;
-  background: #087e8b;
+
   color: white;
 }
 
 /***** contact styles *****/
 
+.contact {
+  background: #095156;
+}
+
 .contact .content-wrapper{
   align-items: center;
-  background: #095156;
+
   color: white;
 }
 
+.contact .text{
+  margin: 50px 0;
+}
 .contact ul {
   display: flex;
   flex-flow: row;
@@ -388,8 +455,9 @@ header nav {
 
 .contact a {
   color: white;
-  /* text-decoration: none; */
+  text-decoration: underline;
   /* font-weight: normal; */
+  font-size: 1em;
 }
 
 .icon img {
@@ -403,10 +471,10 @@ header nav {
 
 footer {
   width: 100%;
+  background: #095156;
 }
 
 footer .content-wrapper{
-  background: #095156;
   color: white;
 }
 
@@ -426,15 +494,18 @@ footer a {
   /* font-weight: normal; */
 }
 
-
-
-
 /* copyright/photo attribution styles */
 
 footer .copyright {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: .875em;
+  margin: 0;
 }
 /* ==========================================================================
    Helper classes
@@ -559,7 +630,6 @@ footer .copyright {
   
   h2 {
     font-size: 1.75em;
-    margin-top: 0;
   }
   
   h3 {  
@@ -596,7 +666,7 @@ footer .copyright {
   .hero .content-wrapper {
     flex-flow: row wrap;
     justify-content: space-between;
-    /* background: #F8F6F4; */
+       /* background: #F8F6F4; */
     /* background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80);
     background-position: center;
     background-size: cover;
@@ -623,7 +693,7 @@ footer .copyright {
   }
 
   .services .block {
-    height: 310px;
+    height: 330px;
   }
   .services .title {
     width: 100%;
@@ -636,6 +706,12 @@ footer .copyright {
   .services .design{  
     width: 45%;
   }
+
+  /* consult styles */
+
+#consult-button{
+  padding: 10px 0px;
+}
 
 
   /***** portfolio styles  *****/
@@ -701,6 +777,7 @@ footer .copyright {
   .contact .text,
   .contact .info {
     width: 45%;
+    margin: 0;
   }
 
   .contact .info {
@@ -714,6 +791,10 @@ footer .copyright {
 
   .info p {
     text-align: right;
+  }
+  
+  .contact a {
+    font-size: 1.15em;
   }
   
   .contact ul {
@@ -748,7 +829,6 @@ footer .copyright {
   
   h2 {
     font-size: 2.25em;
-    margin-top: 0;
   }
   
   h3 {  
@@ -815,7 +895,10 @@ footer .copyright {
   }
   /***** hero styles  *****/
   
- 
+  .hero .content-wrapper {
+    height: 800px;
+  }
+
   .hero .content {
     width: 20%;
    }
