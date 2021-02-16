@@ -115,6 +115,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style: none;
   margin: 0;
@@ -131,55 +132,51 @@ img {
 
 /********** text styles  **********/
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Raleway', sans-serif;
-  font-size: 2em;
   font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
   line-height: 55px;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.75em;
-  font-weight: normal;
-  margin-top: 20px;
+  margin: 20px 0;
 
 }
 
 h3 {  
-  font-family: 'Raleway', sans-serif;
   font-size: 1.6em;
-  font-weight: normal;
-  margin-top: 0;
+  margin: 0 0;
 }
 
 h4 {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
-  font-weight: normal;
   margin-top: 0;
   margin: 10px 0;
 }
 
 h5 {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.4em;
-  font-weight: normal;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 h6 {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.3em;
-  font-weight: normal;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
-  font-weight: normal;
   font-weight: normal;
 }
 
@@ -200,7 +197,7 @@ header {
 
 header .content-wrapper{
   background: #F8F6F4;
-  padding: 2% 5% 0% 5%;
+  padding: 2% 5% 2% 5%;
 }
 
 /* logo styles  */
@@ -212,7 +209,7 @@ header img {
 
 /* nav styles  */
 
-header nav {
+header .desktop-nav {
   display: none;
 }
 
@@ -251,7 +248,6 @@ header nav {
 }
 
 /***** hero styles  *****/
-
 
 .hero {
   background: #F8F6F4;
@@ -339,17 +335,15 @@ header nav {
   background-color: #6B9438;
   border-radius: 5px;
   color: #ffffff;
+  font-size: 1.4em;
+  margin: 10px 0;
+  padding: 2%;
   transition-duration: 0.4s;
   width: 80%;
-}
+ }
 
 #consult-button:hover{
   background-color: #5d8b29fd;
-}
-
-#consult-button a{
-  color: #ffffff;
-  text-decoration:none;
 }
 
 /***** portfolio styles  *****/
@@ -458,6 +452,7 @@ footer p {
   font-size: .875em;
   margin: 0;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -552,9 +547,12 @@ footer p {
 
   /********** text styles  **********/
 
+
+
   /***** header styles *****/
 
   /* nav styles  */
+
   .topnav a {
     font-size: 1.50em;
   }
@@ -703,6 +701,8 @@ footer p {
 
   /***** footer styles  *****/
 
+
+
   /* footer nav styles  */
 
   footer nav {
@@ -752,7 +752,7 @@ footer p {
   /***** header styles *****/
 
   header .content-wrapper {
-    align-items: baseline;
+    align-items: center;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
@@ -770,16 +770,22 @@ footer p {
   /* brand styles  */
 
   header h3 {
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 16%;
   }
 
   /* nav styles  */
   
+  header .desktop-nav {
+    display: contents;
+    width: 100%;
+  }
+
   header nav {
     display: contents;
   }
   
-  header ul {
+  header .desktop-nav ul {
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -818,7 +824,11 @@ footer p {
   }
   /***** portfolio styles  *****/
 
+
+
   /***** about styles *****/
+
+
 
   /***** contact styles *****/
 
@@ -831,7 +841,7 @@ footer p {
   .footer-nav a:hover{
     text-decoration: underline
   }
-  
+
 }
 
 /* ==========================================================================
