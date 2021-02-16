@@ -252,7 +252,6 @@ header nav {
 
 /***** hero styles  *****/
 
-/* content styles  */
 
 .hero {
   background: #F8F6F4;
@@ -546,17 +545,6 @@ footer p {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-/********** global styles  **********/
-/********** text styles  **********/
-/********** mobile styles  **********/
-
-/***** header styles *****/
-/***** hero styles  *****/
-/***** services styles  *****/
-/***** portfolio styles  *****/
-/***** about styles *****/
-/***** contact styles *****/
-/***** footer styles  *****/
 
 /********** tablet styles  **********/
 
@@ -716,21 +704,21 @@ footer p {
   /***** footer styles  *****/
 
   /* footer nav styles  */
+
   footer nav {
     width: 50%;
   }
-  
+
 }
 
-/********** tablet styles  **********/
+/********** desktop styles  **********/
+
 @media only screen and (min-width: 1200px) {
-  /********** global styles  **********/
+
   /********** text styles  **********/
 
   h1 {
     font-size: 2.6em;
-    margin-top: 10px;
-    line-height: 55px;
   }
   
   h2 {
@@ -739,12 +727,10 @@ footer p {
   
   h3 {  
     font-size: 2.1em;
-    margin-top: 0;
   }
   
   h4 {
     font-size: 2em;
-    margin-bottom: 10px;
   }
   
   h5 {
@@ -766,21 +752,13 @@ footer p {
   /***** header styles *****/
 
   header .content-wrapper {
+    align-items: baseline;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: baseline;
   }
+
+  /* logo styles */
   
-  header h3 {
-    margin-right: 15%;
-  }
-  header ul {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-  }
-
-
   header figure {
     width: 10%;
   }
@@ -789,10 +767,22 @@ footer p {
     width: 100%;
   }
 
+  /* brand styles  */
+
+  header h3 {
+    margin-right: 15%;
+  }
+
   /* nav styles  */
   
   header nav {
     display: contents;
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
   }
 
   header nav a:hover{
@@ -802,6 +792,7 @@ footer p {
   .topnav {
     display: none;
   }
+
   /***** hero styles  *****/
   
   .hero .content-wrapper {
@@ -823,21 +814,24 @@ footer p {
   /***** services styles  *****/
 
   .services .block {
-    height: 395px;;
+    height: 395px;
   }
   /***** portfolio styles  *****/
-  /***** about styles *****/
-  /***** contact styles *****/
 
+  /***** about styles *****/
+
+  /***** contact styles *****/
 
   .contact .contact-text:hover{
     text-decoration: none;
   }
+
   /***** footer styles  *****/
 
   .footer-nav a:hover{
     text-decoration: underline
   }
+  
 }
 
 /* ==========================================================================
