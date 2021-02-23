@@ -48,6 +48,7 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+  width: 100%
 }
 
 /*
@@ -386,6 +387,10 @@ header .desktop-nav {
   color: white;
 }
 
+.about p {
+  margin-top: 5%;
+}
+
 /***** contact styles *****/
 
 .contact {
@@ -398,7 +403,7 @@ header .desktop-nav {
 }
 
 .contact .text{
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .contact ul {
@@ -650,6 +655,10 @@ footer p {
     width: 45%;
   }
 
+  .about p {
+    margin-top: 0;
+  }
+
   .about figure {
     -webkit-order: 1;
     order: 1;
@@ -668,6 +677,7 @@ footer p {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin: 3% 0 0;
   }
   
   .contact .text,
