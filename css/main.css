@@ -140,6 +140,7 @@ h5,
 h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
+  margin-top: 0;
 }
 
 h1 {
@@ -150,7 +151,7 @@ h1 {
 
 h2 {
   font-size: 1.75em;
-  margin: 20px 0;
+  margin: 25px 0;
 
 }
 
@@ -161,8 +162,7 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  margin-top: 0;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 
 h5 {
@@ -178,6 +178,7 @@ h6 {
 p {
   font-size: 1.25em;
   font-weight: normal;
+  margin-top: 0;
 }
 
 a {
@@ -366,6 +367,8 @@ header .desktop-nav {
 
 .portfolio .view-project  {
   font-style: italic;
+  margin: 5% 0;
+  display: block;
 }
 
 .portfolio figure:hover {
