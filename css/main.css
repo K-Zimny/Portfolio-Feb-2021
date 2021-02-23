@@ -364,6 +364,10 @@ header .desktop-nav {
   font-style: italic;
 }
 
+.portfolio .view-project  {
+  font-style: italic;
+}
+
 .portfolio figure:hover {
   opacity: 50%;
 }
@@ -628,6 +632,7 @@ footer p {
   .about .content-wrapper {
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .about .title {
@@ -718,35 +723,35 @@ footer p {
   /********** text styles  **********/
 
   h1 {
-    font-size: 2.6em;
-  }
-  
-  h2 {
-    font-size: 2.45em;
-  }
-  
-  h3 {  
-    font-size: 2.1em;
-  }
-  
-  h4 {
     font-size: 2em;
   }
   
-  h5 {
+  h2 {
     font-size: 1.9em;
   }
   
-  h6 {
+  h3 {  
     font-size: 1.8em;
   }
   
-  p {
+  h4 {
+    font-size: 1.7em;
+  }
+  
+  h5 {
     font-size: 1.6em;
   }
   
-  a {
+  h6 {
     font-size: 1.5em;
+  }
+  
+  p {
+    font-size: 1.4em;
+  }
+  
+  a {
+    font-size: 1.4em;
   }
 
   /***** header styles *****/
