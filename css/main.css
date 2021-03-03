@@ -167,13 +167,14 @@ h4 {
 }
 
 h5 {
-  font-size: 1.4em;
+  font-size: 1em;
+  font-style: italic;
   margin-bottom: 10px;
   margin: 10px 0;
 }
 
 h6 {
-  font-size: 1.3em;
+  font-size: .857em;
 }
 
 p {
@@ -752,7 +753,7 @@ footer p {
   }
   
   h5 {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   
   h6 {
