@@ -440,6 +440,7 @@ footer .content-wrapper{
 footer nav {
   margin: auto;
   width: 100%;
+  display: none; /*Uncomment when ready to resolve size issue*/
 }
 
 footer ul {
@@ -450,6 +451,7 @@ footer ul {
 footer a {
   color: white;
   text-decoration: none;
+  /* font-size: .75em; */
 }
 
 /* copyright/photo attribution styles */
@@ -464,7 +466,84 @@ footer .copyright {
 footer p {
   font-size: .875em;
   margin: 0;
+  text-align: center;
 }
+
+/********* resume page styles  *********/
+
+.resume-body {
+  display: flex;
+  flex-flow: column;
+}
+
+.resume p,
+.resume a {
+  font-size: 1.05em;
+}
+
+.resume h3 {
+  text-decoration: underline;
+  margin-bottom: 2.5%;
+}
+
+/** resume right side styles **/
+
+.resume-body-right {
+  order: 1;
+  -webkit-order: 1;
+  margin-bottom: 5%;
+}
+
+.developer-skills ul {
+  margin-bottom: 5%;
+}
+
+/** resume left side styles **/
+
+.resume-body-left {
+  order: 2;
+  -webkit-order: 2;
+}
+
+/* Project styles */
+
+.project-item span {
+  font-weight: bold;
+}
+
+/* work experiences styles */
+
+.work-name p,
+.work-place p {
+  margin: 0;
+}
+
+.work-details ol {
+  padding-left: 5%;
+}
+
+.work-experience li {
+  list-style: disc;
+}
+
+/* resume footer button styles  */
+
+#resume-button {
+    background-color: #6B9438;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1.05em;
+    margin: 10px 0;
+    padding: 1.5%;
+    transition-duration: 0.4s;
+    width: 100%;
+   }
+  
+   #resume-button:hover{
+    background-color: #5d8b29fd;
+  }
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -728,6 +807,59 @@ footer p {
     width: 50%;
   }
 
+
+  /********* resume page styles  *********/
+
+  .resume-body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .projects,
+  .work-experience {
+    margin-bottom: 5%;
+}
+  /* resume left styles  */
+
+  .resume-body-left {
+    width: 65%;
+    order: 1;
+    -webkit-order: 1;
+  }
+
+
+  .work-name {
+    display: inline-block;
+    width: 70%
+  }
+
+  .work-place {
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+  }
+
+  
+  /* resume right styles  */
+
+  .resume-body-right {
+    width: 30%;
+    order: 2;
+    -webkit-order: 2;
+  }
+
+  /* resume footer button styles */
+
+  .resume-footer .content-wrapper {
+    flex-flow: row;
+    justify-content: center;
+  }
+
+  .resume-footer form {
+    width: 60%;
+  }
+
 }
 
 /********** desktop styles  **********/
@@ -860,6 +992,9 @@ footer p {
   .footer-nav a:hover{
     text-decoration: underline
   }
+
+  /********* resume page styles  *********/
+
 
 }
 
