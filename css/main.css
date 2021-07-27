@@ -506,6 +506,22 @@ footer p {
   -webkit-order: 2;
 }
 
+.work-item .work-details p {
+  margin-bottom: 5px;
+}
+
+/* Developer skills styles */
+
+.developer-skills p {
+  margin-bottom: 5px;
+}
+
+/* Additional Skills styles */
+
+.additional-skills p {
+  margin-bottom: 5px;
+}
+
 /* Project styles */
 
 .project-item span {
@@ -527,7 +543,7 @@ footer p {
   list-style: disc;
 }
 
-/* resume footer button styles  */
+/** resume footer button styles  **/
 
 #resume-button {
     background-color: #6B9438;
