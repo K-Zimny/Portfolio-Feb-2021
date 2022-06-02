@@ -48,7 +48,7 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
-  width: 100%
+  width: 100%;
 }
 
 /*
@@ -92,11 +92,12 @@ textarea {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #29525E;
+  font-family: "Open Sans", sans-serif;
+  color: #29525e;
 }
 
 .content-wrapper {
@@ -139,7 +140,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   margin-top: 0;
 }
@@ -153,10 +154,9 @@ h1 {
 h2 {
   font-size: 1.75em;
   margin: 25px 0;
-
 }
 
-h3 {  
+h3 {
   font-size: 1.6em;
   margin: 0 0;
 }
@@ -174,7 +174,7 @@ h5 {
 }
 
 h6 {
-  font-size: .857em;
+  font-size: 0.857em;
 }
 
 p {
@@ -184,7 +184,7 @@ p {
 }
 
 a {
-  color: #29525E;
+  color: #29525e;
   font-size: 1.25em;
   font-weight: normal;
   text-decoration: none;
@@ -195,11 +195,11 @@ a {
 /***** header styles *****/
 
 header {
-  background: #F8F6F4;
+  background: #f8f6f4;
 }
 
-header .content-wrapper{
-  background: #F8F6F4;
+header .content-wrapper {
+  background: #f8f6f4;
   padding: 2% 5% 2% 5%;
 }
 
@@ -253,30 +253,32 @@ header .desktop-nav {
 /***** hero styles  *****/
 
 .hero {
-  background: #F8F6F4;
+  background: #f8f6f4;
   padding-bottom: 10px;
 }
 
 .hero .content-wrapper {
   align-items: center;
-  background: #F8F6F4 url(../img/christopher-gower-m_HRfLhgABo-unsplash\ \(1\).jpg) no-repeat center ;
+  background: #f8f6f4 url(../img/christopher-gower-m_HRfLhgABo-unsplash.jpg)
+    no-repeat center;
   background-size: cover;
   padding: 1% 5%;
 }
 
 .hero .content {
-  background: #F8F6F4;
-  border: 2px solid #29525E;
+  background: #f8f6f4;
+  border: 2px solid #29525e;
   opacity: 90%;
   text-align: center;
   width: 60%;
-  padding: 0 .5%;
+  padding: 0 0.5%;
+  text-transform: capitalize;
 }
 
 /***** services styles  *****/
 
 .services {
-    background: white;
+  background: white;
 }
 
 .services .content-wrapper {
@@ -335,8 +337,8 @@ header .desktop-nav {
   width: 100%;
 }
 
-#consult-button{
-  background-color: #6B9438;
+#consult-button {
+  background-color: #6b9438;
   border-radius: 5px;
   color: #ffffff;
   font-size: 1.4em;
@@ -344,16 +346,16 @@ header .desktop-nav {
   padding: 2%;
   transition-duration: 0.4s;
   width: 80%;
- }
+}
 
-#consult-button:hover{
+#consult-button:hover {
   background-color: #5d8b29fd;
 }
 
 /***** portfolio styles  *****/
 
 .portfolio {
-  background: #F8F6F4;
+  background: #f8f6f4;
 }
 
 .portfolio .content-wrapper {
@@ -368,7 +370,7 @@ header .desktop-nav {
   font-style: italic;
 }
 
-.portfolio .view-project  {
+.portfolio .view-project {
   font-style: italic;
   margin: 5% 0;
   display: block;
@@ -384,7 +386,7 @@ header .desktop-nav {
   background: #087e8b;
 }
 
-.about .content-wrapper{
+.about .content-wrapper {
   align-items: center;
   color: white;
 }
@@ -399,12 +401,12 @@ header .desktop-nav {
   background: #095156;
 }
 
-.contact .content-wrapper{
+.contact .content-wrapper {
   align-items: center;
   color: white;
 }
 
-.contact .text{
+.contact .text {
   margin: 30px 0;
 }
 
@@ -434,19 +436,29 @@ footer {
   width: 100%;
 }
 
-footer .content-wrapper{
+footer .content-wrapper {
   color: white;
 }
 
 footer nav {
   margin: auto;
   width: 100%;
-  display: none; /*Uncomment when ready to resolve size issue*/
+  /* display: none; Uncomment when ready to resolve size issue */
 }
 
 footer ul {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer li:nth-child(odd) {
+  margin: 0 10px;
+}
+
+footer li:nth-child(even) {
+  top: 3px;
+  position: relative;
 }
 
 footer a {
@@ -465,7 +477,7 @@ footer .copyright {
 }
 
 footer p {
-  font-size: .875em;
+  font-size: 0.875em;
   margin: 0;
   text-align: center;
 }
@@ -530,21 +542,19 @@ footer p {
 /* resume footer button styles  */
 
 #resume-button {
-    background-color: #6B9438;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 1.05em;
-    margin: 10px 0;
-    padding: 1.5%;
-    transition-duration: 0.4s;
-    width: 100%;
-   }
-  
-   #resume-button:hover{
-    background-color: #5d8b29fd;
-  }
+  background-color: #6b9438;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.05em;
+  margin: 10px 0;
+  padding: 1.5%;
+  transition-duration: 0.4s;
+  width: 100%;
+}
 
-
+#resume-button:hover {
+  background-color: #5d8b29fd;
+}
 
 /* ==========================================================================
    Helper classes
@@ -637,19 +647,16 @@ footer p {
 /********** tablet styles  **********/
 
 @media only screen and (min-width: 768px) {
-
   /********** text styles  **********/
-
-
 
   /***** header styles *****/
 
   /* nav styles  */
 
   .topnav a {
-    font-size: 1.50em;
+    font-size: 1.5em;
   }
-  
+
   .topnav a.icon {
     top: 4px;
   }
@@ -659,6 +666,7 @@ footer p {
   .hero .content-wrapper {
     flex-flow: row wrap;
     justify-content: space-between;
+    min-height: calc(100vh - 250px);
   }
 
   .hero .content {
@@ -672,12 +680,12 @@ footer p {
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
-  
-  .services .develop{
+
+  .services .develop {
     width: 45%;
   }
 
-  .services .design{  
+  .services .design {
     width: 45%;
   }
 
@@ -691,7 +699,7 @@ footer p {
 
   /* consult styles */
 
-  #consult-button{
+  #consult-button {
     padding: 10px 0px;
   }
 
@@ -710,7 +718,7 @@ footer p {
     width: 45%;
   }
 
-  .portfolio  figure {
+  .portfolio figure {
     -webkit-order: 1;
     order: 1;
     width: 45%;
@@ -760,7 +768,7 @@ footer p {
     justify-content: space-between;
     margin: 3% 0 0;
   }
-  
+
   .contact .text,
   .contact .info {
     margin: 0;
@@ -780,11 +788,11 @@ footer p {
   .info p {
     text-align: right;
   }
-  
+
   .contact a {
     font-size: 1.15em;
   }
-  
+
   /* social icons */
 
   .contact ul {
@@ -800,14 +808,11 @@ footer p {
 
   /***** footer styles  *****/
 
-
-
   /* footer nav styles  */
 
   footer nav {
     width: 50%;
   }
-
 
   /********* resume page styles  *********/
 
@@ -820,7 +825,7 @@ footer p {
   .projects,
   .work-experience {
     margin-bottom: 5%;
-}
+  }
   /* resume left styles  */
 
   .resume-body-left {
@@ -829,10 +834,9 @@ footer p {
     -webkit-order: 1;
   }
 
-
   .work-name {
     display: inline-block;
-    width: 70%
+    width: 70%;
   }
 
   .work-place {
@@ -841,7 +845,6 @@ footer p {
     text-align: right;
   }
 
-  
   /* resume right styles  */
 
   .resume-body-right {
@@ -860,43 +863,41 @@ footer p {
   .resume-footer form {
     width: 60%;
   }
-
 }
 
 /********** desktop styles  **********/
 
 @media only screen and (min-width: 1200px) {
-
   /********** text styles  **********/
 
   h1 {
     font-size: 2em;
   }
-  
+
   h2 {
     font-size: 1.9em;
   }
-  
-  h3 {  
+
+  h3 {
     font-size: 1.8em;
   }
-  
+
   h4 {
     font-size: 1.7em;
   }
-  
+
   h5 {
     font-size: 1.4em;
   }
-  
+
   h6 {
     font-size: 1.5em;
   }
-  
+
   p {
     font-size: 1.4em;
   }
-  
+
   a {
     font-size: 1.4em;
   }
@@ -910,7 +911,7 @@ footer p {
   }
 
   /* logo styles */
-  
+
   header figure {
     width: 10%;
   }
@@ -927,7 +928,7 @@ footer p {
   }
 
   /* nav styles  */
-  
+
   header .desktop-nav {
     display: contents;
     width: 100%;
@@ -936,35 +937,35 @@ footer p {
   header nav {
     display: contents;
   }
-  
+
   header .desktop-nav ul {
     display: flex;
     justify-content: space-between;
     width: 50%;
   }
 
-  header nav a:hover{
+  header nav a:hover {
     text-decoration: underline;
   }
-  
+
   .topnav {
     display: none;
   }
 
   /***** hero styles  *****/
-  
+
   .hero .content-wrapper {
     height: 650px;
   }
 
   .hero .content {
     width: 20%;
-   }
+  }
 
-   .hero .content h1{
-     line-height: 60px;
-   }
-  
+  .hero .content h1 {
+    line-height: 60px;
+  }
+
   .hero-image figure {
     width: 50%;
   }
@@ -976,27 +977,21 @@ footer p {
   }
   /***** portfolio styles  *****/
 
-
-
   /***** about styles *****/
-
-
 
   /***** contact styles *****/
 
-  .contact .contact-text:hover{
+  .contact .contact-text:hover {
     text-decoration: none;
   }
 
   /***** footer styles  *****/
 
-  .footer-nav a:hover{
-    text-decoration: underline
+  .footer-nav a:hover {
+    text-decoration: underline;
   }
 
   /********* resume page styles  *********/
-
-
 }
 
 /* ==========================================================================
