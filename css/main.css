@@ -297,12 +297,14 @@ header .desktop-nav {
   background-image: url(../img/develop-background-full.png);
   background-repeat: round;
   margin-bottom: 10px;
+  border: 1px solid #e9e9e9;
 }
 
 .services .design {
   background-image: url(../img/design-background-full.png);
   background-repeat: round;
   margin-bottom: 10px;
+  border: 1px solid #e9e9e9;
 }
 
 .block {
@@ -329,6 +331,10 @@ header .desktop-nav {
 
 #design-pencil-ruler {
   margin-bottom: 12px;
+}
+
+#wordpressLogo {
+  width: 50%;
 }
 
 /* consult styles */
